@@ -1,0 +1,221 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  margin: 0 auto;
+  max-width: 650px;
+  height: 100vh;
+  position: relative;
+  border: 1px solid #E5E5EA;
+}
+
+header {
+  padding: 1rem;
+  box-shadow: inset 0px -1px 0px #E5E5EA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .avatars {
+  display: flex;
+  width: 26px;
+  height: auto;
+}
+header .avatars .avatar {
+  position: relative;
+  border: 1px solid #FFF;
+  border-radius: 100%;
+}
+header .avatars .avatar img {
+  display: block;
+}
+header .avatars .avatar.second {
+  left: -10px;
+}
+header .avatars .avatar.third {
+  left: -20px;
+}
+header .avatars .avatar.fourth {
+  left: -30px;
+}
+header .chat-name {
+  text-align: center;
+}
+header .chat-name h1 {
+  color: #2C2C2E;
+  font-weight: 600;
+  font-size: 0.83rem;
+}
+header .chat-name span {
+  color: #666666;
+  font-size: 0.75rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  box-shadow: inset 0px 1px 0px #E5E5EA;
+}
+footer .input {
+  width: 100%;
+  border: none;
+  padding: 0.25rem;
+}
+footer .input input {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border: 1px solid #FFF;
+}
+footer .input input:focus {
+  border: 1px solid #007AFF;
+}
+footer .emoji {
+  padding-left: 1rem;
+}
+footer .send-options {
+  padding-right: 1rem;
+  display: flex;
+}
+footer .send-options .send {
+  margin-left: 0.8rem;
+}
+
+main {
+  padding: 1rem;
+  padding-bottom: 0;
+  overflow: auto;
+}
+main .date {
+  margin-top: 0.4rem;
+  text-align: center;
+  font-size: 12px;
+  color: #666666;
+}
+main .chat-ui {
+  margin-top: 1.4rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+main .chat-ui .msg {
+  position: relative;
+}
+main .chat-ui .msg .msg-content {
+  color: #FFF;
+  width: fit-content;
+  padding: 0.7rem 0.5rem;
+  padding-bottom: 0.35rem;
+}
+main .chat-ui .msg-info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+main .chat-ui .msg-info__time {
+  font-size: 0.75rem;
+}
+main .chat-ui .msg-info__receipt {
+  margin-left: 0.5rem;
+}
+main .chat-ui .msg:not(:first-child) {
+  margin-top: 1.2rem;
+}
+main .chat-ui .msg.sender {
+  align-self: flex-end;
+}
+main .chat-ui .msg.sender .msg-content {
+  background: #007AFF;
+  border-radius: 6px 0px 6px 6px;
+}
+main .chat-ui .msg.sender #tip {
+  position: absolute;
+  right: -1.8%;
+  top: 0;
+}
+main .chat-ui .msg.receiver {
+  display: flex;
+}
+main .chat-ui .msg.receiver #tip {
+  position: absolute;
+  left: 5%;
+  top: 0;
+}
+main .chat-ui .msg.receiver .msg-content {
+  color: #2C2C2C;
+  background: #F2F2F7;
+  margin-left: 1rem;
+  border-radius: 0px 6px 6px 6px;
+}
+main .chat-ui .msg.receiver .msg-info__time {
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-container {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=/main.48b3db1d.css.map */
