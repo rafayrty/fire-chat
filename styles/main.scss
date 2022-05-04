@@ -7,11 +7,13 @@
 body,html {
     margin: 0;
     padding: 0;
+    height:100%;
 }
 .main-container {
     margin: 0 auto;
     max-width: 650px;
-    height: 100vh;
+    // height: 100vh;
+    height:100%;
     position: relative;
     border:1px solid #E5E5EA;
 }
@@ -75,6 +77,7 @@ footer {
     width:100%;
     bottom:0;
     box-shadow: inset 0px 1px 0px #E5E5EA;
+    z-index:5;
     .input{
         width:100%;
         border:none;
@@ -130,6 +133,9 @@ main{
             width:fit-content;
             padding:.7rem .5rem;
             padding-bottom:.35rem;
+            .msg-text{
+                display:flex;
+            }
           }
 
             &-info{
@@ -164,7 +170,7 @@ main{
             display:flex;
             #tip{
                 position:absolute;
-                left:5%;
+                left:8.4%;
                 top:0;
             }
 

@@ -54,12 +54,13 @@ table {
 body, html {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 .main-container {
   margin: 0 auto;
   max-width: 650px;
-  height: 100vh;
+  height: 100%;
   position: relative;
   border: 1px solid #E5E5EA;
 }
@@ -114,6 +115,7 @@ footer {
   width: 100%;
   bottom: 0;
   box-shadow: inset 0px 1px 0px #E5E5EA;
+  z-index: 5;
 }
 footer .input {
   width: 100%;
@@ -167,6 +169,9 @@ main .chat-ui .msg .msg-content {
   padding: 0.7rem 0.5rem;
   padding-bottom: 0.35rem;
 }
+main .chat-ui .msg .msg-content .msg-text {
+  display: flex;
+}
 main .chat-ui .msg-info {
   display: flex;
   justify-content: flex-end;
@@ -199,7 +204,7 @@ main .chat-ui .msg.receiver {
 }
 main .chat-ui .msg.receiver #tip {
   position: absolute;
-  left: 5%;
+  left: 8.4%;
   top: 0;
 }
 main .chat-ui .msg.receiver .msg-content {
