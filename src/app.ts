@@ -99,7 +99,7 @@ class Chat {
                     html += `<div class="msg ${msg.name===this.auth.fetchUser() ? 'sender' : 'receiver'}">
 
          ${msg.name===this.auth.fetchUser() ? '': ` <div class="msg-avatar">
-         <img src="/avatar.df775ea4.png" alt="">
+         <img src="/avatar.png" alt="">
      </div>
 
      <svg id="tip" width="10" height="12" viewBox="0 0 10 12" fill="none"
