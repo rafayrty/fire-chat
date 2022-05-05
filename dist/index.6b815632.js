@@ -653,8 +653,12 @@ class Chat {
             });
             let chatUI = document.querySelector('.chat-ui');
             chatUI.innerHTML = html;
+            let element = document.querySelector('main');
+            element.scrollTop = element.clientHeight;
+            console.log(element.clientHeight);
         // })
         });
+    // window.scrollTo(0, document.body.scrollHeight);
     }
     resizeChatWindow() {
         let header = document.querySelector('header');
@@ -682,6 +686,7 @@ class Chat {
             name: this.auth.fetchUser(),
             message
         });
+        window.scrollTo(0, document.body.scrollHeight);
     }
 }
 let chat = new Chat();
